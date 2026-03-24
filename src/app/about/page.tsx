@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Download, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'About | Sanoj Dayarathna Portfolio',
@@ -64,6 +65,23 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+
+                {/* Resume Download Section */}
+                <div className="glass-panel animate-slide-in-right delay-200" style={styles.resumeSection}>
+                    <div style={styles.resumeContent}>
+                        <div>
+                            <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                                <FileText className="gradient-text" size={32} /> Grab My Resume
+                            </h2>
+                            <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem' }}>
+                                Want a brief overview of my experience, skills, and projects in a neat PDF format?
+                            </p>
+                        </div>
+                        <a href="/resume.pdf" download className="btn-primary animate-pulse-glow" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', whiteSpace: 'nowrap' }}>
+                            <Download size={20} /> Download Resume
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );
@@ -109,6 +127,19 @@ const styles = {
     skillsGrid: {
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        gap: '2rem',
+    },
+    resumeSection: {
+        padding: '3rem',
+        background: 'linear-gradient(135deg, rgba(26, 29, 36, 0.8), rgba(109, 40, 217, 0.15))',
+        border: '1px solid rgba(139, 92, 246, 0.4)',
+        boxShadow: '0 10px 30px rgba(109, 40, 217, 0.1)',
+    },
+    resumeContent: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap' as const,
         gap: '2rem',
     },
     list: {

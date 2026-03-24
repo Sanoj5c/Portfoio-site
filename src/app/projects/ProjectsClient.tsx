@@ -5,14 +5,14 @@ import { motion, Variants } from 'framer-motion';
 const projects = [
     {
         id: 1,
-        title: 'Medicare+',
+        title: 'Medicare+ Mobile App',
         description: 'A comprehensive healthcare mobile application developed using Flutter. It connects patients with medical services, offering a seamless and intuitive user experience.',
         stack: ['Flutter', 'Dart', 'Mobile Development', 'UI/UX'],
         link: '#',
     },
     {
         id: 2,
-        title: 'Online Auction Site',
+        title: 'Bidfy Online Auction Site',
         description: 'A full-scale, feature-rich web platform for real-time bidding and auctions. Built with a robust backend and an attractive, responsive frontend.',
         stack: ['Fullstack Web', 'React', 'Node.js', 'Databases'],
         link: '#',
@@ -31,6 +31,13 @@ const projects = [
         stack: ['Next.js', 'React', 'Three.js', 'CSS'],
         link: '#',
     },
+    {
+        id: 5,
+        title: 'PersonalSpendlyPersonal- Expense Tracker App ',
+        description: 'Spendly takes the stress out of managing money. Built with Flutter and Firebase and powered by AI, it delivers a smooth, real-time expense tracking experience — helping users log spending, set budgets, and receive smart personalized insights that turn their financial habits into better decisions.',
+        stack: ['Flutter', 'Firebase', 'AI', 'Mobile Development', 'UI/UX'],
+        link: '#',
+    }
 ];
 
 export default function ProjectsClient() {
