@@ -39,9 +39,9 @@ export default function Navbar() {
                 </motion.div>
                 <ul style={styles.navLinks}>
                     <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/" style={styles.link}>Home</Link></motion.li>
-                    <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/projects" style={styles.link}>Projects</Link></motion.li>
-                    <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/about" style={styles.link}>About</Link></motion.li>
-                    <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/contact" style={styles.link}>Contact</Link></motion.li>
+                    <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/#projects" style={styles.link}>Projects</Link></motion.li>
+                    <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/#about" style={styles.link}>About</Link></motion.li>
+                    <motion.li variants={linkVariants} whileHover={{ y: -2 }}><Link href="/#contact" style={styles.link}>Contact</Link></motion.li>
                 </ul>
             </div>
         </motion.nav>

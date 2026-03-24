@@ -5,7 +5,7 @@ export default function Footer() {
         <footer style={styles.footer}>
             <div className="container">
                 <p style={styles.text}>
-                    &copy; {currentYear} John Doe. Built with Next.js & Vanilla CSS.
+                    &copy; {currentYear} Sanoj Dayarathna
                 </p>
             </div>
         </footer>

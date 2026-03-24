@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
     title: 'Contact | Sanoj Dayarathna Portfolio',
@@ -15,26 +16,7 @@ export default function Contact() {
 
             <div style={styles.content}>
                 <div className="glass-panel" style={styles.formContainer}>
-                    <form style={styles.form}>
-                        <div style={styles.formGroup}>
-                            <label htmlFor="name" style={styles.label}>Name</label>
-                            <input type="text" id="name" className="form-input" placeholder="Your Name" required />
-                        </div>
-
-                        <div style={styles.formGroup}>
-                            <label htmlFor="email" style={styles.label}>Email</label>
-                            <input type="email" id="email" className="form-input" placeholder="you@example.com" required />
-                        </div>
-
-                        <div style={styles.formGroup}>
-                            <label htmlFor="message" style={styles.label}>Message</label>
-                            <textarea id="message" className="form-input" rows={6} placeholder="How can I help you?" required style={styles.textarea}></textarea>
-                        </div>
-
-                        <button type="submit" className="btn-primary" style={styles.submitBtn}>
-                            Send Message
-                        </button>
-                    </form>
+                    <ContactForm />
                 </div>
 
                 <div style={styles.info}>
@@ -45,9 +27,9 @@ export default function Contact() {
                             I try to respond to all inquiries within 24 hours.
                         </p>
                         <ul style={styles.infoList}>
-                            <li><strong>Email:</strong> hello@johndoe.com</li>
-                            <li><strong>Phone:</strong> +1 (555) 123-4567</li>
-                            <li><strong>Location:</strong> San Francisco, CA</li>
+                            <li><strong>Email:</strong> sanojdayarathna5cc@gmail.com</li>
+                            <li><strong>Phone:</strong> +94 752748468</li>
+                            <li><strong>Location:</strong> Kegalle,Srilanka</li>
                         </ul>
 
                         <h3 style={{ fontSize: '1.5rem', margin: '2rem 0 1rem 0' }}>Social Profiles</h3>
@@ -84,28 +66,6 @@ const styles = {
     },
     formContainer: {
         padding: '3rem',
-    },
-    form: {
-        display: 'flex',
-        flexDirection: 'column' as const,
-    },
-    formGroup: {
-        display: 'flex',
-        flexDirection: 'column' as const,
-        marginBottom: '1rem',
-    },
-    label: {
-        marginBottom: '0.5rem',
-        fontWeight: 500,
-        color: 'var(--text-primary)',
-    },
-    textarea: {
-        resize: 'vertical' as const,
-        fontFamily: 'inherit',
-    },
-    submitBtn: {
-        marginTop: '1rem',
-        alignSelf: 'flex-start',
     },
     info: {
         display: 'flex',
