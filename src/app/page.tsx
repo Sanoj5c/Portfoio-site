@@ -155,10 +155,9 @@ export default function Home() {
             <motion.div className="glass-panel" variants={cardVariants} style={{ padding: '3rem' }}>
               <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Who I am</h2>
               <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.8 }}>
-                I'm a Computer Science undergraduate who builds things that matter. With expertise in full stack development and a growing focus on AI/ML, I design and develop applications that are both functional and meaningful. From school management platforms to healthcare booking systems, my projects reflect my drive to solve real-world problems through clean code and intelligent solutions.
-              </p>
-              <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.8 }}>
-                My expertise spans across both mobile and web development. I have developed complex mobile applications using Flutter, such as my flagship health app <strong>Medicare+</strong>, and built feature-rich web platforms like a fully functional <strong>Auction Site</strong>. My interest in AI/ML allows me to integrate intelligent features and modern solutions into my products, creating software that people love to use.
+                I'm a Computer Science undergraduate from Sri Lanka with a genuine passion for building things that make a difference. When I'm not coding, you'll find me lost in a good game, discovering new music, or dreaming up the next project idea — because for me, coding isn't just a skill, it's a hobby too.
+                I'm deeply passionate about AI & machine learning, mobile app development, and web development. I love the process of turning an idea into a fully working product — from the first line of code to the final deploy. I'm also a firm believer in open source and the power of community-driven development, and I actively look for ways to contribute and grow alongside other developers.
+                Based in Sri Lanka, I bring a unique perspective to every project I work on — driven by curiosity, fueled by creativity, and always looking for the next challenge to tackle.
               </p>
 
             </motion.div>
@@ -355,9 +354,9 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
         >
-          <motion.h3 style={{ ...styles.sectionTitle, fontSize: '3.5rem', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '1rem' }} variants={cardVariants}>Let's Build <span className="gradient-text">Together</span></motion.h3>
+          <motion.h3 style={{ ...styles.sectionTitle, fontSize: '3.5rem', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '1rem' }} variants={cardVariants}>Let&apos;s Build <span className="gradient-text">Together</span></motion.h3>
           <motion.p style={{ textAlign: 'center', color: 'var(--text-secondary)', fontSize: '1.2rem', marginBottom: '3rem' }} variants={cardVariants}>
-            Have a project in mind? Let's collaborate and create something amazing.
+            Have a project in mind? Let&apos;s collaborate and create something amazing.
           </motion.p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 2fr) minmax(0, 1fr)', gap: '3rem' }}>
